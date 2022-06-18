@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-color: #DDA15B;
+    background-size: 100% 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'rokkitt', serif;
+    color: white;
+    font-size: 50px;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-top: 5px;
+}
+
+nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rokkitt', sans-serif;
+    font-weight: bold;
+}
+
+.main-logo {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 140px;
+}
+
+.logo-text {
+    font-size: 45px;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+.fonts {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.fonts-box {
+    background-color: #F3C682;
+    width: 60vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.font-heading {
+    margin: 0 auto;
+    margin-top: 750px;
+    width: fit-content;
+}
+
+.font-body {
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+}
+
+.arimo {
+    font-family: 'Arimo', sans-serif;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.arimo h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.arimo p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.arimo-bold {
+    font-weight: bold;
+}
+
+.arimo-italic {
+    font-style: italic;
+}
+
+.rokkitt {
+    font-family: 'rokkitt', sans-serif;
+    color: white;
+    padding-left: 20px;
+}
+
+.rokkitt h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.rokkitt p {
+    font-size: 17px;
+    padding: 10px;
+}
+
+.rokkitt-bold {
+    font-weight: bold;
+}
+
+.rokkitt-italic {
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.circletext {
+    height: 500px;
+    width: 500px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+
+.circletext img {
+    animation: rotate 60s linear 0s infinite;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.eye {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+}
+     
+#color {
+    margin-top: 95px;
+}
+
+.color-heading {
+    font-family: 'rokkitt', sans-serif;
+    font-size: 30px;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.pyramid {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.color-boxes {
+    margin: 0 auto;
+    margin-top: 350px;
+    margin-bottom: 50px;
+    width: 680px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arimo', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.white {
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    position: absolute;
+    width: 680px;
+    height: 300px;
+    bottom: -1270px;
+}p
+
+.white:hover {
+    cursor: pointer;
+}
+
+.white:hover ~ svg path {
+    fill:white;
+}
+
+.black {
+    background-color: black;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.black:hover {
+    cursor: pointer;
+}
+
+.black:hover ~ svg path {
+    fill:black;
+}
+
+.blue {
+    background-color: #44BEB3;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blue:hover {
+    cursor: pointer;
+}
+
+.blue:hover ~ svg path {
+    fill:#44BEB3;
+}
+
+.sand {
+    background-color: #F3C682;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sand:hover {
+    cursor: pointer;
+}
+
+.sand:hover ~ svg path { 
+    fill: #F3C682;
+}
